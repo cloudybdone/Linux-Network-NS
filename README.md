@@ -67,7 +67,7 @@ sudo ip link set veth-r1 netns router-ns
 sudo ip link set veth-br1 master br1
 sudo ip link set veth-br1 up
 ```
-
+![virtual interfaces](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-53-20.png)
 ---
 
 ## **Step 4: Configure IP Addresses**
@@ -95,7 +95,9 @@ sudo ip netns exec router-ns ip link set veth-r0 up
 sudo ip netns exec router-ns ip link set veth-r1 up
 sudo ip netns exec router-ns ip link set lo up
 ```
+![virtual interfaces](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-56-24.png)
 
+![virtual interfaces](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-56-54.png)
 ---
 
 ## **Step 5: Configure Routing**
@@ -105,7 +107,7 @@ Enable IP forwarding in `router-ns`:
 ```bash
 sudo ip netns exec router-ns sysctl -w net.ipv4.ip_forward=1
 ```
-
+![virtual interfaces](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-57-30.png)
 Set default routes in `ns1` and `ns2` to the router:
 
 ```bash
