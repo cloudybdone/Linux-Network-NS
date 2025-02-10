@@ -14,6 +14,7 @@ sudo ip link add br1 type bridge
 sudo ip link set br0 up
 sudo ip link set br1 up
 ```
+![bridge interface](Screenshot from 2025-02-10 13-51-42.png)
 
 ---
 
