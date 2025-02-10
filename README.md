@@ -33,7 +33,7 @@ Verify namespace creation:
 ```bash
 ip netns list
 ```
-
+![net ns list](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-52-15.png)
 ---
 
 ## **Step 3: Create Virtual Interfaces and Connections**
