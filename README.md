@@ -114,7 +114,8 @@ Set default routes in `ns1` and `ns2` to the router:
 sudo ip netns exec ns1 ip route add default via 10.0.1.1
 sudo ip netns exec ns2 ip route add default via 10.0.2.1
 ```
-
+![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-58-08.png)
+![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-58-29.png)
 ---
 
 ## **Step 6: Test Connectivity**
@@ -131,7 +132,11 @@ sudo ip netns exec ns2 ping -c 3 10.0.2.1
 # Test connectivity from ns1 to ns2 (should work if routing is correct)
 sudo ip netns exec ns1 ping -c 3 10.0.2.10
 ```
-
+![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-59-16.png)
+![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-59-48.png)
+![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2014-00-17.png)
+![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2014-01-03.png)
+![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2014-08-07.png)
 ---
 
 ## **Cleanup Script**
@@ -152,12 +157,9 @@ sudo ip link del br1
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## Contributing
-
-Pull requests are welcome! Please submit issues for any bugs or enhancements.
 
 ## Author
 
-**Your Name**\
-[GitHub](https://github.com/your-username)
+**Mohammed Salehuzzaman**\
+[GitHub](https://github.com/cloudybdone)
 
