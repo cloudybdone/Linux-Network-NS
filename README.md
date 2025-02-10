@@ -124,13 +124,13 @@ Ping between namespaces:
 
 ```bash
 # Test connectivity from ns1 to router
-sudo ip netns exec ns1 ping -c 3 10.0.1.1
+sudo ip netns exec ns1 ping -c 5 10.0.1.1
 
 # Test connectivity from ns2 to router
 sudo ip netns exec ns2 ping -c 3 10.0.2.1
 
 # Test connectivity from ns1 to ns2 (should work if routing is correct)
-sudo ip netns exec ns1 ping -c 3 10.0.2.10
+sudo ip netns exec ns1 ping -c 5 10.0.2.10
 ```
 ![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-59-16.png)
 ![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-59-48.png)
