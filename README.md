@@ -267,26 +267,26 @@ esac
 This script automates the setup of a simulated network environment using Linux network namespaces, virtual Ethernet (veth) pairs, and bridges. It allows testing network connectivity between different namespaces, simulating a basic router between two subnets.
 
 ## Usage
-Save the script as `network_sim.sh`, make it executable, and run it with the appropriate arguments.
+Save the script as `network_ns.sh`, make it executable, and run it with the appropriate arguments.
 
 ### Make the script executable:
 ```bash
-chmod +x network_sim.sh
+chmod +x network_ns.sh
 ```
 
 ### Run the setup:
 ```bash
-sudo ./network_sim.sh setup
+sudo ./network_ns.sh setup
 ```
 
 ### Test connectivity:
 ```bash
-sudo ./network_sim.sh test
+sudo ./network_ns.sh test
 ```
 
 ### Clean up the network setup:
 ```bash
-sudo ./network_sim.sh cleanup
+sudo ./network_ns.sh cleanup
 ```
 
 ---
@@ -411,13 +411,6 @@ esac
 ```
 
 ---
-
-
-   ```
-
-
-
-
 
 
 
