@@ -1,4 +1,6 @@
 # Linux Network Namespace Simulation
+![Diagram of NS Simulation](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2014-37-00.png)
+
 
 ## **Step 1: Create Network Bridges**
 
