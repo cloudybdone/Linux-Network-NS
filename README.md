@@ -136,6 +136,10 @@ sudo ip netns exec ns1 ping -c 5 10.0.2.10
 ![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2013-59-48.png)
 ![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2014-00-17.png)
 ![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2014-01-03.png)
+
+# Enable Debugging with tcpdump
+Run tcpdump inside router-ns to check if packets are being forwarded:
+
 ![bridge interface](https://github.com/cloudybdone/Linux-Network-NS/blob/main/Screenshot%20from%202025-02-10%2014-08-07.png)
 ---
 
